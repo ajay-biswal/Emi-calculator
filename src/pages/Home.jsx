@@ -30,10 +30,8 @@ const Home = () => {
   };
 
   return (
-    <div className="mt-4 ml-[10%] bg-theme text-theme ">
-      <h1 className="font-medium text-2xl heading-theme">
-        Loan Calculator DashBoard
-      </h1>
+    <div className="mt-4 ml-[15%] bg-theme text-theme ">
+      <h1 className=" text-[35px] heading-theme">Loan Calculator DashBoard</h1>
       <form className="flex flex-col mt-3" onSubmit={calculateEmi}>
         <div className="flex gap-x-4">
           <TextField
@@ -58,9 +56,9 @@ const Home = () => {
             onChange={(e) => setTerms(e.target.value)}
           />
         </div>
-        <div className="mt-2">
+        <div className="mt-6">
           <button
-            className="bg-blue-700 text-[#ffffff] px-5 py-2 rounded-lg "
+            className="bg-blue-700 text-[#ffffff] text-[18px] px-5 py-2 rounded-lg cursor-pointer hover:shadow-2xl"
             type="submit"
           >
             Calculate
@@ -74,6 +72,7 @@ const Home = () => {
           loanAmount={loanAmount}
           intrestRates={intrestRates}
           terms={terms}
+          setIsVisible={setIsVisible}
         />
       )}
     </div>
