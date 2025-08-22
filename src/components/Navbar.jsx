@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
@@ -8,8 +8,8 @@ const Navbar = () => {
     <nav className="flex bg-nav text-nav p-4 items-center justify-between shadow-2xs">
       <h1 className="font-medium head-text text-2xl">Loan Calculator</h1>
       <div className="flex gap-x-4 font-medium">
-        <Link to="/">HOME</Link>
-        <Link to="exchange-rates">EXCHANGE RATES</Link>
+        <NavLink to="/">HOME</NavLink>
+        <Link to="exchange-rates">EXCHANGE RATES (LIVE)</Link>
         <Link to="about">ABOUT</Link>
         <Link to="error">ERROR</Link>
         <div className="flex items-center">

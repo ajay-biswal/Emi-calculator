@@ -104,13 +104,18 @@ const Amortization = ({ setIsVisible, loanAmount, intrestRates, terms }) => {
       </div>
 
       {/* Amortization Table */}
-      <div className="border mr-[10%] mt-4 border-white shadow-xl overflow-y-scroll">
-        <h1 className="font-medium text-xl px-3 py-3 border-0 border-b-0">
-          Amortization Schedule ({currency})
-        </h1>
+      <div className="border mr-[10%] mt-4 border-white shadow-xl h-[30rem] overflow-y-auto">
         <table className="w-full border-collapse">
-          <thead className="">
-            <tr className="border-b border-gray-200">
+          <thead className="sticky top-0 z-20 bg-white text-black">
+            <tr>
+              <th
+                colSpan="4"
+                className="font-medium text-xl px-3 py-3  text-left"
+              >
+                Amortization Schedule ({currency})
+              </th>
+            </tr>
+            <tr className="border-b border-gray-200 sticky top-[3rem] z-10">
               <th className="px-3 py-3 text-left">Month</th>
               <th className="py-3  text-right">Principal</th>
               <th className="py-3 text-right">Intrest</th>
