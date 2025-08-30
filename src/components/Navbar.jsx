@@ -11,6 +11,8 @@ const Navbar = () => {
     <nav className="bg-nav text-nav shadow-md">
       <div className="flex items-center justify-between p-4">
         {/* Brand */}
+        {/* for checking */}
+
         <h1 className="font-medium head-text text-2xl">Loan Calculator</h1>
 
         {/* Desktop Links */}
